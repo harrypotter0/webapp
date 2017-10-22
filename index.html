@@ -39,14 +39,14 @@
                  <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span>Contact</a></li>
              </ul>
              <span class="navbar-text nav-item" style="cursor:pointer">
-                 <a data-toggle="modal" data-target="#loginModal">
+                 <a data-toggle="modal" data-target="#loginModal1">
                  <span class="fa fa-sign-in"></span> Login</a>
              </span>
          </div>
         </div>
     </nav>
 
-    <div id="loginModal" class="modal fade" role="dialog">
+    <div id="loginModal1" class="modal fade" role="dialog">
        <div class="modal-dialog modal-lg" role="content">
        <!-- Modal content-->
        <div class="modal-content">
@@ -90,14 +90,100 @@
                     <div class="col-12 col-sm  align-self-center">
                         <img src="img/logo.png" class="img-fluid">
                     </div>
-                    <div class="col-12 col-sm  align-self-center">
+                <!--    <div class="col-12 col-sm  align-self-center">
                         <a type="button" class="btn btn-warning btn-sm btn-block"
                     data-toggle="tooltip" data-html="true"  title="Or Call us at  <br><strong>+852 12345678</strong>"
                      data-placement="bottom" href="#reserveform">Reserve</a>
+                 </div>  -->
+                    <div class="col-12 col-sm  align-self-center">
+                        <span data-toggle="modal" data-target="#loginModal" type="button"
+                        class="btn btn-warning btn-sm btn-block style="cursor:pointer"">
+                            Reserve</span>
                     </div>
+
             </div>
         </div>
     </header>
+
+
+        <div id="loginModal" class="modal fade" role="dialog">
+           <div class="modal-dialog modal-lg" role="content">
+           <!-- Modal content-->
+           <div class="modal-content">
+               <div class="modal-header">
+                   <h4 class="modal-title">Reserve a Table </h4>
+                   <button type="button" class="close" data-dismiss="modal">&times;</button>
+               </div>
+               <div class="modal-body">
+                   <div class="form-group row">
+                     <label for="example-text-input" class="col-12 col-sm-2 col-form-label">Number of Guests</label>
+                     <div class="col-12 col-sm-10">
+                         <div class="form-check form-check-inline">
+                           <label class="form-check-label">
+                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+                           </label>
+                         </div>
+                         <div class="form-check form-check-inline">
+                           <label class="form-check-label">
+                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+                           </label>
+                         </div>
+                         <div class="form-check form-check-inline">
+                           <label class="form-check-label">
+                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" > 3
+                           </label>
+                         </div>
+                         <div class="form-check form-check-inline">
+                           <label class="form-check-label">
+                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 4
+                           </label>
+                         </div>
+                         <div class="form-check form-check-inline">
+                           <label class="form-check-label">
+                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 5
+                           </label>
+                         </div>
+                         <div class="form-check form-check-inline">
+                           <label class="form-check-label">
+                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" > 6
+                           </label>
+                         </div>
+                     </div>
+                   </div>
+
+                   <div class="form-group row">
+                    <label for="example-search-input" class="col-12 col-sm-2 col-form-label">Section</label>
+                    <div class="col-12 col-sm-10">
+                        <div class="btn-group" data-toggle="buttons">
+                          <label class="btn btn-success active">
+                            <input type="checkbox" checked autocomplete="off"> Non-Smoking
+                          </label>
+                          <label class="btn btn-danger">
+                            <input type="checkbox" autocomplete="off"> Smoking
+                          </label>
+                        </div>
+                    </div>
+                   </div>
+
+                   <div class="form-group row">
+                    <label for="example-search-input" class="col-12 col-sm-2 col-form-label">Date and Time</label>
+                     <div class="col-12 col-sm-4">
+                         <input type="date" class="form-control" name="date" />
+                     </div>
+                     <div class="col-12 col-sm-4">
+                         <input type="time" class="form-control" name="time">
+                     </div>
+                   </div>
+               </div>
+
+               <div class="modal-footer">
+                   <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
+                   <button type="submit" class="btn btn-primary btn-sm">Reserve</button>
+               </div>
+           </div>
+           </div>
+       </div>
+
 
     <div class="container">
         <div class="row row-content">
@@ -191,20 +277,6 @@
         </div>
         </div>
 
-<!--
-        <div class="alert alert-success" role="alert">
-          <strong>Well done!</strong> You successfully read this important alert message.
-        </div>
-        <div class="alert alert-info" role="alert">
-          <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
-        </div>
-        <div class="alert alert-warning" role="alert">
-          <strong>Warning!</strong> Better check yourself, you're not looking too good.
-        </div>
-        <div class="alert alert-danger" role="alert">
-          <strong>Oh snap!</strong> Change a few things up and try submitting again.
-        </div>
--->
 
         <div class="row row-content align-items-center">
             <div class="col-sm-4 col-md-3 flex-last">
@@ -331,9 +403,9 @@
        <script src="node_modules/tether/dist/js/tether.min.js"></script>
        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
        <script>
-          $(document).ready(function(){
+         /* $(document).ready(function(){
           $('[data-toggle="tooltip"]').tooltip();
-          });
+      }); */
        </script>
 </body>
 
