@@ -21,6 +21,7 @@ It's a journey of mine in learning node.js ,front-end and angular.js
 * Writing tests
 * Code review
 * Other guidelines
+* Just a PR 
 
 ### Who do I talk to? ###
 
