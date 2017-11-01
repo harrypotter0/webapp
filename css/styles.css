@@ -51,3 +51,27 @@ body {
   right: 0px;
   position: absolute;
   bottom: 0px; }
+
+#reserveContent {
+  background-color: #512DA8;
+  color: floralwhite; }
+  #reserveContent h4, #reserveContent button {
+    color: floralwhite; }
+
+#reserveBody {
+  background-color: #D1C4E9; }
+
+#reserveFooter {
+  background-color: #9575CD; }
+
+#loginHeader {
+  background-color: #512DA8;
+  color: floralwhite; }
+  #loginHeader h4, #loginHeader button {
+    color: floralwhite; }
+
+#loginBody {
+  background-color: #D1C4E9; }
+
+#loginFooter {
+  background-color: #9575CD; }

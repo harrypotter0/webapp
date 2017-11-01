@@ -6,9 +6,9 @@ $background-pale: #D1C4E9;
 // Height variables
 $carousel-item-height: 300px;
 
-@mixin zero-margin($pad-up-dn, $pad-left-right) {
+@mixin zero-margin($pad-up-down, $pad-left-right) {
 	margin:0px auto;
-	padding: $pad-up-dn $pad-left-right;
+	padding: $pad-up-down $pad-left-right;
 }
 
 .row-header{
@@ -51,7 +51,6 @@ body{
     border-bottom: 1px solid $lt-gray;
     padding: 10px;
 }
-
 .carousel {
     background:$background-dark;
 
@@ -69,4 +68,32 @@ body{
     right:0px;
     position: absolute;
     bottom: 0px;
+}
+
+#reserveContent{
+	background-color: $background-dark;
+	color: floralwhite;
+	h4, button {
+		color: floralwhite
+	}
+}
+
+#reserveBody {
+	background-color: $background-pale;
+}
+#reserveFooter {
+	background-color: $background-light;
+}
+#loginHeader {
+	background-color: $background-dark;
+	color: floralwhite;
+	h4, button {
+		color: floralwhite;
+	}
+}
+#loginBody {
+	background-color: $background-pale;
+}
+#loginFooter {
+	background-color: $background-light;
 }
