@@ -15,6 +15,9 @@
     "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html",
     "build": "npm run clean && npm run copyfonts && npm run usemin"
   },
+  "engines": {
+    "node": "6.11.1"
+  },
   "author": "Akash Kandpal",
   "license": "ISC",
   "devDependencies": {
@@ -51,10 +54,14 @@
     "rimraf": "^2.6.2",
     "time-grunt": "^1.4.0",
     "uglifyjs": "^2.4.11",
-    "usemin-cli": "^0.5.1"
+    "usemin-cli": "^0.5.1",
+    "request": "^2.81.0",
+    "tape": "^4.7.0"
   },
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6",
+    "ejs": "2.5.6",
+    "express": "^4.15.2",
     "font-awesome": "^4.7.0",
     "htmlparser": "^1.7.7",
     "imagemin": "^5.3.1",
